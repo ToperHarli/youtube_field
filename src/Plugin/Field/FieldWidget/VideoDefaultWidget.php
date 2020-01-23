@@ -38,10 +38,7 @@
       $element['url'] = [
         '#type' => 'textfield',
         '#title' => t('Video URL'),
-        
-        // Set here the current value for this field, or a default value (or
-        // null) if there is no a value
-        '#default_value' => '',  //isset($url_video) ? $url_video : NULL,
+        '#default_value' => isset($items[$delta]->url) ? $items[$delta]->url : null,
         '#empty_value' => '',
         '#placeholder' => t('Video URL'),
       ];
